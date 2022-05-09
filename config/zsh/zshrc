@@ -13,7 +13,8 @@ autoload -Uz colors && colors
 # completion
 autoload -Uz compinit && compinit
 
-# source prompt
+# source files 
 source "$ZDOTDIR/prompt.zsh"
+source "$ZDOTDIR/alias.zsh"
 
 eval "$(zoxide init zsh)"

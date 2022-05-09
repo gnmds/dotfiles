@@ -50,4 +50,4 @@ fi
 
 nitrogen --restore &
 picom &
-qtile start
+exec dwm

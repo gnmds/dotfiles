@@ -4,7 +4,6 @@
 export EDITOR='nvim'
 export MANPAGER='nvim +Man!'
 export PAGER='less'
-export TERMINAL='st'
 
 # xdg variables
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -20,8 +19,4 @@ export SAVEHIST=5000
 
 # variables for home directory clean up
 export LESSHISTFILE=-
-
-# execute startx on login
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-	exec startx
-fi
+export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"

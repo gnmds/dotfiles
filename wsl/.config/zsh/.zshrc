@@ -14,7 +14,7 @@ autoload -Uz colors && colors
 autoload -Uz compinit && compinit
 
 # source files 
-source "$ZDOTDIR/prompt.zsh"
-source "$ZDOTDIR/alias.zsh"
+source "$ZDOTDIR/zsh-prompt"
+source "$ZDOTDIR/zsh-alias"
 
 eval "$(zoxide init zsh)"

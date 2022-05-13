@@ -1,2 +1,2 @@
 # ignore zsh completion file
-wsl/.config/zsh/.zcompdump
+base/.config/zsh/.zcompdump

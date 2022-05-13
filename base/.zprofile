@@ -20,3 +20,7 @@ export SAVEHIST=5000
 # variables for home directory clean up
 export LESSHISTFILE=-
 export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
+
+if [ -f "$HOME/.xprofile" ]; then
+	source "$HOME/.xprofile"
+fi

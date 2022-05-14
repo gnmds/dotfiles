@@ -13,8 +13,8 @@ source "/usr/share/fzf/completion.zsh"
 autoload -Uz colors && colors
 
 # completion
-autoload -Uz compinit && compinit
-zstyle ':completion:*' menu select -d "${XDG_CACHE_HOME:-"$HOME/.cache"}/zcompdump"
+autoload -Uz compinit && compinit -d "${XDG_CACHE_HOME:-"$HOME/.cache"}/zcompdump"
+zstyle ':completion:*' menu select
 _comp_options+=(globdots)
 zmodload zsh/complist
 fpath=(/usr/share/zsh/site-functions $fpath)

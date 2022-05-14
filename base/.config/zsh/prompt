@@ -8,5 +8,5 @@ setopt prompt_subst
 
 # prompt
 PROMPT='%(?.%F{red}❯%F{green}❯%F{yellow}❯%f .%F{red}%B%?❯%f%b )'
-RPROMPT='%F{cyan}%1~%F{green}${vcs_info_msg_0_}%f'
+RPROMPT='%B%F{blue}%1~%b%F{yellow}${vcs_info_msg_0_}%f'
 zstyle ':vcs_info:git:*' formats ' %b'

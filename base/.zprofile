@@ -17,6 +17,10 @@ export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/zsh/zhistory"
 export HISTSIZE=5000
 export SAVEHIST=5000
 
+# add pip user programs to path
+path+=("$HOME/.local/bin")
+export PATH
+
 # variables for home directory clean up
 export LESSHISTFILE=-
 export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"

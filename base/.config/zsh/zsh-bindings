@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# vi mode
+bindkey -v
+export KEYTIME=1
+
+# cursor shape for vim modes
+cursor_block='\e[1 q'
+cursor_beam='\e[5 q'
+function zle-keymap-select {
+	case "$KEYMAP" in
+		vicmd) echo -ne "$cursor_block" ;;
+		viins|main) echo -ne "$cursor_beam" ;;
+	esac
+}
+
+zle -N zle-keymap-select
+
+zle-line-init() {
+	# reset cursor shape
+	echo -ne "$cursor_beam"
+}
+
+zle -N zle-line-init
+
+# vi keys in completion menu
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'j' vi-down-line-or-history
+
+# cd to home and clear with ctlr-space
+bindkey -s '^ ' '^ucd && clear\n'

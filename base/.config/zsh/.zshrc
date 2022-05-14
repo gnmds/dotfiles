@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# vi mode
-bindkey -v
-
 # options
 unsetopt BEEP
 zle_highlight=('paste:none')
@@ -24,6 +21,7 @@ fpath=(/usr/share/zsh/site-functions $fpath)
 # source files 
 source "$ZDOTDIR/zsh-prompt"
 source "$ZDOTDIR/zsh-alias"
+source "$ZDOTDIR/zsh-bindings"
 
 # useful plugins
 source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"

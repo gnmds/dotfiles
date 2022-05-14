@@ -14,8 +14,9 @@ autoload -Uz colors && colors
 
 # completion
 autoload -Uz compinit && compinit
-zstyle ':completion:*' menu select
+zstyle ':completion:*' menu select -d "${XDG_CACHE_HOME:-"$HOME/.cache"}/zcompdump"
 _comp_options+=(globdots)
+zmodload zsh/complist
 fpath=(/usr/share/zsh/site-functions $fpath)
 
 # source files 

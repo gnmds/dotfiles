@@ -7,6 +7,6 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 
 # prompt
-PROMPT='%(?.%F{red}❯%F{green}❯%F{yellow}❯%f .%F{red}%B%?❯%f%b )'
+PROMPT='%(?.%F{red}❯%F{yellow}❯%F{green}❯%f .%F{red}%B%?❯%f%b )'
 RPROMPT='%B%F{blue}%1~%b%F{yellow}${vcs_info_msg_0_}%f'
 zstyle ':vcs_info:git:*' formats ' %b'

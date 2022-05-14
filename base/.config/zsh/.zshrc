@@ -20,10 +20,10 @@ zmodload zsh/complist
 fpath=(/usr/share/zsh/site-functions $fpath)
 
 # source files 
-source "$ZDOTDIR/zsh-prompt"
-source "$ZDOTDIR/zsh-alias"
-source "$ZDOTDIR/zsh-bindings"
-source "$ZDOTDIR/zsh-terminfo"
+source "$ZDOTDIR/prompt"
+source "$ZDOTDIR/alias"
+source "$ZDOTDIR/bindings"
+source "$ZDOTDIR/terminfo"
 
 # useful plugins
 source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"

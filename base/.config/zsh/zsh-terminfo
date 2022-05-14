@@ -1,0 +1,11 @@
+# set term title to current dir
+function precmd {
+	print -Pn '\e]0;%~\a'
+}
+
+# set term title to current program
+function preexec {
+	print -Pn "\e]0;$1\a"
+
+	echo -ne '\e[5 q'
+}

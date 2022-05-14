@@ -23,6 +23,7 @@ fpath=(/usr/share/zsh/site-functions $fpath)
 source "$ZDOTDIR/zsh-prompt"
 source "$ZDOTDIR/zsh-alias"
 source "$ZDOTDIR/zsh-bindings"
+source "$ZDOTDIR/zsh-terminfo"
 
 # useful plugins
 source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"

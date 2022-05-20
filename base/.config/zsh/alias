@@ -16,3 +16,11 @@ alias fgrep="fgrep --color=auto"
 alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
+
+# git alias
+alias m="git checkout master"
+alias gc="git checkout"
+alias push="git push origin/master"
+alias com="git commit"
+alias gs="git status"
+alias gl="git log"

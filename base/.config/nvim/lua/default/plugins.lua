@@ -40,9 +40,11 @@ packer.init {
 
 -- install plugins
 return packer.startup(function(use)
+
     use "wbthomason/packer.nvim" -- packer manages itself
     use "nvim-lua/popup.nvim" -- popup api from vim in neovim
     use "nvim-lua/plenary.nvim" -- lib functions
+    use { "rebelot/kanagawa.nvim", as = "kanagawa" } -- color scheme
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()

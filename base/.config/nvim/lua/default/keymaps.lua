@@ -2,6 +2,8 @@ local opts = { noremap = true, silent = true }
 
 local term_opts = { silent = true }
 
+local cmd = vim.cmd
+
 -- shorten api name
 local keymap = vim.api.nvim_set_keymap
 
@@ -63,3 +65,8 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- fix typos
+cmd "command Q q"
+cmd "command W w"
+cmd "command WQ wq"

@@ -1,42 +1,54 @@
+local opt = vim.opt
+
 local options = {
 
-  number = true,
-  relativenumber = true,
-  backup = false,
-  clipboard = "unnamedplus",    -- default system clipboard
-  cmdheight = 2,                -- more cmd line space
-  completeopt	= { "menuone", "noselect" },
-  conceallevel = 0,             -- displays text better
-  fileencoding = "utf-8",
-  hlsearch = true,
-  ignorecase = true,
-  mouse = "a",
-  pumheight = 10,               -- pop up menu height
-  showtabline = 2,
-  smartcase = true,
-  smartindent = true,
-  showmode = false,
-  splitbelow = true,
-  splitright = true,
-  swapfile = false,
-  timeoutlen = 1000,            -- time to wait for a macro to complete in ms
-  undofile = true,
-  updatetime = 300,
-  writebackup	= false,
-  expandtab = true,
-  shiftwidth = 2,
-  tabstop	= 4,
-  numberwidth	= 4,
-  wrap = false,
-  scrolloff = 8,
-  sidescrolloff = 8
+  autoindent        = true,
+  autoread          = true,         -- read files again if changed outside of nvim
+  autowrite         = false,        -- write file on modification
+  autowriteall      = false,        -- same as above but for more commands
+  backup            = false,        -- dont make a backup file
+  belloff           = "all",
+  breakat           = " ^!@*-+;:,./?",
+  browsedir         = "buffer",     -- use the directory of the current buffer in the file browser
+  cedit             = "<C-F>",      -- opens command-line window when in command mode
+  clipboard         = "unnamedplus",
+  cmdheight         = 2,
+  cmdwinheight      = 5,
+  completeopt       = "menu,preview",
+  confirm           = true,         -- confirm save of unsaved file changes
+  expandtab         = true,         -- replace tab with spaces
+  fileencoding      = "UTF-8",
+  fileignorecase    = true,
+  history           = 5000,
+  hlsearch          = false,        -- search matches are not highlighted after exiting search
+  incsearch         = true,         -- highlight matches during search
+  ignorecase        = true,
+  insertmode        = false,
+  joinspaces        = false,
+  mouse             = "a",
+  number            = true,
+  numberwidth       = 4,
+  relativenumber    = true,
+  scrolloff         = 8,            -- number of lines that are visible above and below the cursor
+  shiftwidth        = 4,
+  showmode          = false,        -- handled by plugin
+  showtabline       = 2,
+  smartcase         = true,
+  smartindent       = true,
+  splitbelow        = true,
+  splitright        = true,
+  swapfile          = false,
+  timeoutlen        = 1000,
+  undofile          = true,
+  updatetime        = 300,
+  wildmenu	    = true,
+  wrap              = false
 
 }
 
-vim.opt.shortmess:append "c"
+opt.shortmess:append "c"
+opt.iskeyword:append "-"
 
 for k, v in pairs(options) do
-  vim.opt[k] = v
+  opt[k] = v
 end
-
-vim.cmd [[set iskeyword+=-]]

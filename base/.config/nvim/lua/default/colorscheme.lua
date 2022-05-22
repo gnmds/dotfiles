@@ -1,11 +1,11 @@
 require('kanagawa').setup({
     undercurl = true,
-    commentStyle = "italic",
-    functionStyle = "NONE",
-    keywordStyle = "bold",
-    statementStyle = "NONE",
-    typeStyle = "NONE",
-    variablebuiltinStyle = "bold",
+    commentStyle = 'italic',
+    functionStyle = 'NONE',
+    keywordStyle = 'bold',
+    statementStyle = 'NONE',
+    typeStyle = 'NONE',
+    variablebuiltinStyle = 'bold',
     specialReturn = true,
     specialException = true,
     transparent = true,
@@ -15,10 +15,10 @@ require('kanagawa').setup({
     overrides = {}
 })
 
-local colorscheme = "kanagawa"
+local colorscheme = 'kanagawa'
 
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+local status_ok, _ = pcall(vim.cmd, 'colorscheme ' .. colorscheme)
 if not status_ok then
-    vim.notify("colorscheme " .. colorscheme .. " not found!")
+    vim.notify('colorscheme ' .. colorscheme .. ' not found!')
     return
 end

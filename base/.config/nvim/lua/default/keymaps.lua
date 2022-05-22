@@ -1,6 +1,7 @@
-local opts = { noremap = true, silent = true }
-
-local term_opts = { silent = true }
+local opts = {
+    noremap = true,
+    silent = true
+}
 
 local cmd = vim.cmd
 
@@ -17,14 +18,12 @@ vim.g.maplocalleader = ' '
 -- normal --
 
 -- window navigation
-
 keymap('n', '<C-h>', '<C-w>h', opts)
 keymap('n', '<C-j>', '<C-w>j', opts)
 keymap('n', '<C-k>', '<C-w>k', opts)
 keymap('n', '<C-l>', '<C-w>l', opts)
 
 -- open file explorer
-
 keymap('n', '<leader>e', ':Lex 30<cr>', opts)
 
 -- resize with keys
@@ -49,7 +48,6 @@ keymap('i', 'jj', '<ESC>', opts)
 -- visual --
 
 -- stay in indent mode
-
 keymap('v', '<', '<gv', opts)
 keymap('v', '>', '>gv', opts)
 

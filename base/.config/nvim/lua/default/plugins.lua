@@ -45,6 +45,8 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim" -- popup api from vim in neovim
     use "nvim-lua/plenary.nvim" -- lib functions
     use { "rebelot/kanagawa.nvim", as = "kanagawa" } -- color scheme
+    use "kyazdani42/nvim-web-devicons" -- beautiful icons
+    use "nvim-lualine/lualine.nvim"
 
     -- completions
     use "hrsh7th/nvim-cmp" -- completion plugin

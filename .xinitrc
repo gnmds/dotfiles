@@ -33,5 +33,4 @@ while true; do
 done &
 
 nitrogen --restore &
-picom &
 exec dwm

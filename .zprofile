@@ -4,6 +4,8 @@
 export EDITOR='nvim'
 export MANPAGER='nvim +Man!'
 export PAGER='less'
+export TERMINAL='st'
+export BROWSER='brave'
 
 # xdg variables
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -24,7 +26,9 @@ export PATH
 # variables for home directory clean up
 export LESSHISTFILE=-
 export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
+export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
 
-if [ -f "$HOME/.xprofile" ]; then
-	source "$HOME/.xprofile"
+# execute startx on login
+if [ -z "${ZDISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+    exec startx
 fi

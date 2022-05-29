@@ -24,3 +24,7 @@ alias push="git push origin master"
 alias com="git commit"
 alias gs="git status"
 alias gl="git log"
+
+# ensure that there is no other cmus instance
+alias killcmus="killall cmus && cmus"
+alias cmus="[ `pgrep cmus` ] && killcmus || cmus"

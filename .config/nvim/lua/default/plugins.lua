@@ -51,11 +51,17 @@ return packer.startup(function(use)
     use 'hrsh7th/cmp-buffer' -- buffer completion
     use 'hrsh7th/cmp-path' -- path completion
     use 'hrsh7th/cmp-cmdline' -- cmdline completion
+    use 'hrsh7th/cmp-nvim-lsp' -- lsp completion
+    use 'hrsh7th/cmp-nvim-lua' -- neovim lua completions
 
     -- snippets
     use 'saadparwaiz1/cmp_luasnip' -- snippet completion
     use 'L3MON4D3/LuaSnip' -- snippet engine
     use 'rafamadriz/friendly-snippets' -- a bunch of snippets
+
+    -- lsp
+    use 'neovim/nvim-lspconfig' --enable lsp
+    use 'williamboman/nvim-lsp-installer' -- install lsp
 
     if PACKER_BOOTSTRAP then
         require('packer').sync()

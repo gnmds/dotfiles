@@ -13,7 +13,7 @@ kanagawa.setup({
     variablebuiltinStyle = 'bold',
     specialReturn = true,
     specialException = true,
-    transparent = false,
+    transparent = true,
     dimInactive = false,
     globalStatus = false,
     colors = {},

@@ -6,6 +6,7 @@ export MANPAGER='nvim +Man!'
 export PAGER='less'
 export TERMINAL='st'
 export BROWSER='brave'
+export READER='zathura'
 
 # xdg variables
 export XDG_CACHE_HOME="$HOME/.cache"

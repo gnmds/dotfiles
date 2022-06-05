@@ -24,7 +24,7 @@ keymap('n', '<C-k>', '<C-w>k', opts)
 keymap('n', '<C-l>', '<C-w>l', opts)
 
 -- open file explorer
-keymap('n', '<leader>e', ':NvimTreeToggle<cr>', opts)
+keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 
 -- resize with keys
 keymap('n', '<C-Up>', ':resize +2<CR>', opts)
@@ -35,6 +35,10 @@ keymap('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 -- navigate buffers
 keymap('n', '<S-l>', ':bnext<CR>', opts)
 keymap('n', '<S-h>', ':bprevious<CR>', opts)
+
+-- close buffers
+keymap('n', 'c[', ':BufferLineCloseLeft<CR>', opts)
+keymap('n', 'c]', ':BufferLineCloseRight<CR>', opts)
 
 -- dont enter insert mode after newline
 keymap('n', 'o', 'o<ESC>', opts)
@@ -71,5 +75,5 @@ cmd('command WQ wq')
 
 -- telescope
 
-keymap('n', '<leader>f', '<cmd>Telescope find_files<cr>', opts)
-keymap('n', '<C-t>', '<cmd>Telescope live_grep<cr>', opts)
+keymap('n', '<leader>f', '<cmd>Telescope find_files<CR>', opts)
+keymap('n', '<C-t>', '<cmd>Telescope live_grep<CR>', opts)

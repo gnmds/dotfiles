@@ -46,6 +46,7 @@ return packer.startup(function(use)
     use 'kyazdani42/nvim-web-devicons' -- beautiful icons
     use 'kyazdani42/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
+    use 'akinsho/bufferline.nvim'
     use 'windwp/nvim-autopairs'
     use {
         'numToStr/Comment.nvim',
@@ -82,7 +83,7 @@ return packer.startup(function(use)
     }
 
     -- git
-    use 'lewis6991/gitsigns.nvim' 
+    use 'lewis6991/gitsigns.nvim'
 
     if PACKER_BOOTSTRAP then
         require('packer').sync()

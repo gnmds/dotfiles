@@ -45,6 +45,7 @@ return packer.startup(function(use)
     } -- color scheme
     use 'kyazdani42/nvim-web-devicons' -- beautiful icons
     use 'nvim-lualine/lualine.nvim'
+    use 'windwp/nvim-autopairs'
 
     -- completions
     use 'hrsh7th/nvim-cmp' -- completion plugin

@@ -46,6 +46,12 @@ return packer.startup(function(use)
     use 'kyazdani42/nvim-web-devicons' -- beautiful icons
     use 'nvim-lualine/lualine.nvim'
     use 'windwp/nvim-autopairs'
+    use {
+        'numToStr/Comment.nvim',
+        config = function ()
+            require('Comment').setup()
+        end
+    }
 
     -- completions
     use 'hrsh7th/nvim-cmp' -- completion plugin
@@ -73,6 +79,9 @@ return packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+
+    -- git
+    use 'lewis6991/gitsigns.nvim' 
 
     if PACKER_BOOTSTRAP then
         require('packer').sync()

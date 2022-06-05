@@ -52,6 +52,16 @@ for k, v in pairs(options) do
     opt[k] = v
 end
 
+-- autoclose nvim tree
+vim.api.nvim_create_autocmd('BufEnter', {
+    nested = true,
+    callback = function()
+        if #vim.api.nvim_list_wins() == 1 and vim.api.nvim_buf_get_name(0):match('NvimTree_') ~= nil then
+            vim.cmd 'quit'
+        end
+    end
+})
+
 require 'default.keymaps'
 require 'default.plugins'
 require 'default.colorscheme'
@@ -62,3 +72,4 @@ require 'default.telescope'
 require 'default.treesitter'
 require 'default.autopairs'
 require 'default.gitsigns'
+require 'default.nvim-tree'

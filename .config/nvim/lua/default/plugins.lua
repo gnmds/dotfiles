@@ -44,6 +44,7 @@ return packer.startup(function(use)
         as = 'kanagawa'
     } -- color scheme
     use 'kyazdani42/nvim-web-devicons' -- beautiful icons
+    use 'kyazdani42/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'windwp/nvim-autopairs'
     use {

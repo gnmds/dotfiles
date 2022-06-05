@@ -51,7 +51,7 @@ keymap('i', 'jj', '<ESC>', opts)
 keymap('v', '<', '<gv', opts)
 keymap('v', '>', '>gv', opts)
 
--- move text up and down 
+-- move text up and down
 keymap('v', '<A-j>', ':m .+1<CR>==', opts)
 keymap('v', '<A-k>', ':m .-2<CR>==', opts)
 keymap('v', 'p', "'_dP", opts)
@@ -68,3 +68,8 @@ keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts)
 cmd('command Q q')
 cmd('command W w')
 cmd('command WQ wq')
+
+-- telescope
+
+keymap('n', '<leader>f', "<cmd>Telescope find_files<cr>", opts)
+keymap('n', '<C-t>', '<cmd>Telescope live_grep<cr>', opts)

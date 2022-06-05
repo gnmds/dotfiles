@@ -63,6 +63,10 @@ return packer.startup(function(use)
     use 'neovim/nvim-lspconfig' --enable lsp
     use 'williamboman/nvim-lsp-installer' -- install lsp
 
+    -- telescope
+    use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope-media-files.nvim'
+
     if PACKER_BOOTSTRAP then
         require('packer').sync()
     end

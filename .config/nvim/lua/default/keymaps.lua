@@ -71,5 +71,5 @@ cmd('command WQ wq')
 
 -- telescope
 
-keymap('n', '<leader>f', "<cmd>Telescope find_files<cr>", opts)
+keymap('n', '<leader>f', '<cmd>Telescope find_files<cr>', opts)
 keymap('n', '<C-t>', '<cmd>Telescope live_grep<cr>', opts)

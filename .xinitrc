@@ -31,6 +31,7 @@ while true; do
    xsetroot -name "` date +"%R"`"
 done &
 
+xbindkeys
 nitrogen --restore &
 volumeicon &
 nm-applet &

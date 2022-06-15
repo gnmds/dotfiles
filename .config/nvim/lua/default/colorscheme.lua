@@ -5,12 +5,12 @@ end
 
 kanagawa.setup({
     undercurl = true,
-    commentStyle = 'italic',
-    functionStyle = 'NONE',
-    keywordStyle = 'bold',
-    statementStyle = 'NONE',
-    typeStyle = 'NONE',
-    variablebuiltinStyle = 'bold',
+    commentStyle = { italic = true },
+    functionStyle = {},
+    keywordStyle = { bold = true },
+    statementStyle = {},
+    typeStyle = {},
+    variablebuiltinStyle = { bold = true },
     specialReturn = true,
     specialException = true,
     transparent = true,

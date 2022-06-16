@@ -12,7 +12,7 @@ gitsigns.setup {
         changedelete = { hl = 'GitSignsChange', text = '▎', numhl = 'GitSignsChangeNr', linehl = 'GitSignsChangeLn' }
     },
     signcolumn = true,
-    numhl = false,
+    numhl = true,
     linehl = false,
     word_diff = false,
     watch_gitdir = {

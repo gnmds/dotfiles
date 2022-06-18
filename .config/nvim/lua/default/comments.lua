@@ -8,12 +8,12 @@ comments.setup({
     sticky = true,
     ignore = nil,
     toggler = {
-        line = 'lct',
-        block = 'bct'
+        line = 'gcc',
+        block = 'gcb'
     },
     opleader = {
-        line = 'lc',
-        block = 'bc'
+        line = 'gc',
+        block = 'gb'
     },
     mappings = {
         basic = true,

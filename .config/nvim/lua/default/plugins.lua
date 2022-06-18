@@ -48,12 +48,7 @@ return packer.startup(function(use)
     use 'nvim-lualine/lualine.nvim'
     use 'akinsho/bufferline.nvim'
     use 'windwp/nvim-autopairs'
-    use {
-        'numToStr/Comment.nvim',
-        config = function ()
-            require('Comment').setup()
-        end
-    }
+    use 'numToStr/Comment.nvim'
 
     -- completions
     use 'hrsh7th/nvim-cmp' -- completion plugin

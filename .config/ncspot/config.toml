@@ -1,13 +1,32 @@
-[theme]
-primary = "light white"
-secondary = "light black"
-title = "green"
-playing = "green"
-playing_selected = "black"
-highlight = "black"
-highlight_bg = "white"
-error = "light white"
-statusbar = "white"
-statusbar_progress = "green"
-cmdline = "light white"
-search_match = "light red"
+use_nerdfont = false 
+repeat = "playlist"
+
+
+[keybindings]
+
+# no direct quit
+
+"Shift+q" = "quit"
+"q" = "noop"
+
+# cmus like playback
+
+"z" = "previous"
+"c" = "playpause"
+"v" = "stop"
+"b" = "next"
+"Shift+f" = "noop"
+"Shift+b" = "noop"
+"f" = "noop"
+"b" = "noop"
+
+# cmus like navigation
+"1" = "focus library"
+"Esc" = "focus library" # to escape search mode
+"2" = "focus queue"
+"3" = "focus search"
+"4" = "focus cover"
+
+# safer delete
+"d" = "noop"
+"Shift+d" = "delete"

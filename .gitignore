@@ -1,2 +1,4 @@
 .config/nvim/plugin/
 .config/ncspot/userstate.cbor
+.config/ranger/plugins
+

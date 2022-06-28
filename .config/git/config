@@ -7,11 +7,13 @@
 	name = Gabriel
 	email = gabriel@nagelmichaelsen.de
 [alias]
-        co = checkout
-        st = status
         br = branch
         cm = commit
+        co = checkout
         df = diff
-        ps = push
+        ft = fetch
         pl = pull
+        ps = push
+        rm = remote
         rs = restore
+        st = status

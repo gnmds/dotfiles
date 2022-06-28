@@ -44,11 +44,6 @@ keymap('n', 'c]', ':BufferLineCloseRight<CR>', opts)
 keymap('n', 'o', 'o<ESC>', opts)
 keymap('n', '<S-o>', '<S-o><ESC>', opts)
 
--- insert --
-
--- exit insert mode
-keymap('i', 'jj', '<ESC>', opts)
-
 -- visual --
 
 -- stay in indent mode

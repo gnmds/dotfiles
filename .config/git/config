@@ -1,0 +1,17 @@
+[init]
+        defaultBranch = main
+[credential]
+	helper = /usr/local/bin/git-credential-manager-core
+        credentialStore = gpg
+[user]
+	name = Gabriel
+	email = gabriel@nagelmichaelsen.de
+[alias]
+        co = checkout
+        st = status
+        br = branch
+        cm = commit
+        df = diff
+        ps = push
+        pl = pull
+        rs = restore

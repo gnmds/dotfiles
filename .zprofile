@@ -32,5 +32,5 @@ export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 
 # execute startx on login
 if [ -z "${ZDISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-    exec startx
+    exec startx "${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinitrc"
 fi

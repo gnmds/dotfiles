@@ -31,7 +31,7 @@ while true; do
    xsetroot -name "` date +"%R"`"
 done &
 
-xbindkeys
+xbindkeys -f "${XDG_CONFIG_HOME:-$HOME/.config}/X11/xbindkeysrc"
 nitrogen --restore &
 volumeicon &
 nm-applet &

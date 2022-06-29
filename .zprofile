@@ -28,6 +28,7 @@ export PATH
 export LESSHISTFILE=-
 export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
+export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 
 # execute startx on login
 if [ -z "${ZDISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then

@@ -20,7 +20,7 @@ export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/zsh/zhistory"
 export HISTSIZE=5000
 export SAVEHIST=5000
 
-# add pip user programs to path
+# add user programs to path
 path+=("$HOME/.local/bin")
 export PATH
 

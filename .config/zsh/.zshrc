@@ -3,7 +3,7 @@
 # options
 unsetopt BEEP
 zle_highlight=('paste:none')
-setopt autocd extendedglob nomatch menucomplete
+setopt autocd extendedglob nomatch menucomplete hist_find_no_dups hist_ignore_all_dups
 
 # fzf keybinds
 source "/usr/share/fzf/key-bindings.zsh"

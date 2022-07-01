@@ -18,5 +18,4 @@ alias mv="mv -i"
 alias rm="rm -i"
 
 # ensure that there is no other cmus instance
-alias killcmus="killall cmus && cmus"
-alias cmus="[ `pgrep cmus` ] && killcmus || cmus"
+alias cmus="[ `pgrep cmus` ] && (killall cmus && cmus) || cmus"

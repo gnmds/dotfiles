@@ -1,0 +1,16 @@
+# ignore any files
+*
+
+# unignore files with extensions
+!*.*
+
+# unignore relevant stuff
+!LICENSE
+!Makefile
+!README
+
+# ignore output and def config
+*.o
+*.orig
+*.rej
+config.def.h

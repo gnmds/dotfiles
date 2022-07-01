@@ -1,4 +1,5 @@
 .config/ncspot/userstate.cbor
 .config/nvim/plugin/
 .config/ranger/plugins/
-
+.config/ranger/commands.py
+.config/ranger/scope.sh

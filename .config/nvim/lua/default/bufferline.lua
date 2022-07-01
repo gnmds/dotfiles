@@ -36,8 +36,8 @@ bufferline.setup({
         diagnostics = 'nvim_lsp',
         diagnostics_update_in_insert = false,
         diagnostics_indicator = function(count, level)
-            local icon = level:match("error") and " " or " "
-            return " " .. icon .. count
+            local icon = level:match('error') and ' ' or ' '
+            return ' ' .. icon .. count
         end,
         -- NOTE: this will be called a lot so don't do any heavy processing here
         offsets = { { filetype = 'NvimTree', text = '', padding = 1 } },
